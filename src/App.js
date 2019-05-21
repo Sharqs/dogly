@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 import DogProfile from './DogProfile';
 import Doglist from './Doglist';
 import dogDefaults from './dogDefaults';
@@ -29,6 +29,7 @@ class App extends Component {
                   /></div>)
                 }}
             />
+            <Redirect to='/dogs' />
           </Switch>
         </BrowserRouter>
       </div>
