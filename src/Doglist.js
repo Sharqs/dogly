@@ -14,9 +14,11 @@ class Doglist extends Component{
     let dogs = this.props.dogs.map(dog => <Dog key={uuid()} {...dog} />)
     return (
     <div> 
-      
+      <br />
+      <br />
       <h1>HELLOZ. WE HAVE DOGZ. CLICK ON THEM FOR MORE INFO.</h1>
-      {dogs} 
+      <div className='DogContainer'>{dogs}</div>
+       
     </div>)
   }
 }

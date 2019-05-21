@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
+import { SSL_OP_TLS_ROLLBACK_BUG } from 'constants';
 
 const STYLES = {
-  color: "blue"
+  color: 'rgb(53, 53, 53)'
 }
 
 class Nav extends Component{
